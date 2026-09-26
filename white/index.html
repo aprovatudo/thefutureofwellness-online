@@ -2,63 +2,66 @@
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Byl Consultoria Financeira</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Calibri, 'Segoe UI', sans-serif;background:#fff;color:#2e1a00;line-height:1.7}
-header{padding:24px 40px;border-bottom:1px solid #e8d8c0;display:flex;align-items:center;justify-content:space-between}
-.logo{font-family:'Book Antiqua', Garamond, serif;font-size:1rem;font-weight:700;color:#2e1a00}
+body{font-family:'Segoe UI', Arial, sans-serif;background:#0d0d0d;color:#f0ead6;line-height:1.6}
+header{background:#0d0d0d;border-bottom:1px solid #7a6020;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:56px;position:sticky;top:0;z-index:10}
+.logo{font-family:Garamond, Georgia, serif;font-size:.95rem;font-weight:700;color:#c9a227;letter-spacing:.04em}
 nav ul{list-style:none;display:flex;gap:32px}
-nav a{color:#5a4a30;text-decoration:none;font-size:.85rem}
-nav a:hover{color:#bf6800}
-.hero{max-width:720px;margin:80px auto;padding:0 40px;text-align:center}
-.hero-tag{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#bf6800;display:block;margin-bottom:20px}
-.hero h1{font-family:'Book Antiqua', Garamond, serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;line-height:1.2;color:#2e1a00;margin-bottom:20px}
-.hero h1 em{color:#bf6800;font-style:normal}
-.hero p{color:#5a4a30;font-size:1rem;line-height:1.85;margin-bottom:32px}
-.hero-cta{display:inline-block;border:2px solid #bf6800;color:#bf6800;padding:12px 36px;text-decoration:none;font-weight:600;font-size:.88rem;letter-spacing:.04em;transition:all .2s}
-.hero-cta:hover{background:#bf6800;color:white}
-.rule{border:none;border-top:1px solid #e8d8c0;margin:0 40px}
-.section{max-width:720px;margin:72px auto;padding:0 40px}
-.sec-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#bf6800;display:block;margin-bottom:10px}
-.section h2{font-family:'Book Antiqua', Garamond, serif;font-size:1.5rem;font-weight:700;color:#2e1a00;margin-bottom:40px;padding-bottom:12px;border-bottom:2px solid #bf6800}
-.srv-list{list-style:none}
-.srv-list li{padding:20px 0;border-bottom:1px solid #e8d8c0;display:grid;grid-template-columns:220px 1fr;gap:24px;align-items:baseline}
-.srv-list li:last-child{border-bottom:none}
-.srv-list strong{font-family:'Book Antiqua', Garamond, serif;font-size:.95rem;color:#2e1a00}
-.srv-list span{font-size:.88rem;color:#5a4a30;line-height:1.7}
-.sobre-text p{color:#5a4a30;line-height:1.9;margin-bottom:16px;font-size:.95rem}
-.meta-list{margin-top:36px;list-style:none}
-.meta-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e8d8c0;font-size:.88rem}
-.meta-list li:last-child{border-bottom:none}
-.meta-list .k{color:#5a4a30}
-.meta-list .v{color:#2e1a00;font-weight:600}
-.contato-info p{font-size:.9rem;color:#5a4a30;margin-bottom:10px;line-height:1.6}
-.contato-info a{color:#bf6800;text-decoration:none}
-footer{background:#fdf6ee}
-footer{color:#9a7a50;text-align:center;padding:32px 40px;font-size:.78rem;border-top:1px solid #e8d8c0}
-@media(max-width:600px){.srv-list li{grid-template-columns:1fr;gap:6px}nav{display:none}}
+nav a{color:#a09060;text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+nav a:hover{color:#c9a227}
+.hero{padding:100px 48px 80px;max-width:900px}
+.hero-tag{display:inline-block;border:1px solid #7a6020;color:#c9a227;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;padding:6px 16px;margin-bottom:32px}
+.hero h1{font-family:Garamond, Georgia, serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.1;margin-bottom:24px;color:#f0ead6}
+.hero h1 em{color:#c9a227;font-style:normal}
+.hero-desc{font-size:1.1rem;color:#a09060;max-width:600px;margin-bottom:40px;line-height:1.8}
+.hero-cta{display:inline-block;background:#c9a227;color:#0d0d0d;padding:16px 40px;text-decoration:none;font-weight:700;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.hero-cta:hover{background:#7a6020;color:#f0ead6}
+.divider{border:none;border-top:1px solid #7a6020;margin:0 48px}
+.section{padding:72px 48px;max-width:960px;margin:0 auto}
+.sec-label{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#c9a227;margin-bottom:12px}
+.sec-h2{font-family:Garamond, Georgia, serif;font-size:1.8rem;font-weight:700;color:#f0ead6;margin-bottom:48px}
+.srv-item{display:flex;gap:32px;align-items:flex-start;padding:28px 0;border-bottom:1px solid #7a6020}
+.srv-item:last-child{border-bottom:none}
+.srv-n{font-family:Garamond, Georgia, serif;font-size:3rem;font-weight:700;color:#7a6020;min-width:72px;line-height:1;letter-spacing:-.02em}
+.srv-item h4{font-family:Garamond, Georgia, serif;font-size:1.05rem;font-weight:700;color:#c9a227;margin-bottom:8px}
+.srv-item p{font-size:.9rem;color:#a09060;line-height:1.7}
+.sobre-sec{background:#141414;padding:72px 48px;margin-top:0}
+.sobre-inner{max-width:900px;margin:0 auto}
+.sobre-inner p{color:#a09060;line-height:1.9;margin-bottom:16px;font-size:.98rem}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;margin-top:48px;border:1px solid #7a6020}
+.meta-cell{padding:20px 24px;border-right:1px solid #7a6020}
+.meta-cell:last-child{border-right:none}
+.meta-label{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:#c9a227;margin-bottom:4px}
+.meta-value{font-size:.92rem;color:#f0ead6;font-weight:600}
+.contato-sec{padding:72px 48px;max-width:960px;margin:0 auto}
+.contato-inner{border-left:2px solid #c9a227;padding-left:32px;max-width:500px}
+.contato-inner p{color:#a09060;margin-bottom:12px;font-size:.95rem;line-height:1.7}
+.contato-inner a{color:#c9a227;text-decoration:none}
+footer{background:#141414;border-top:1px solid #7a6020;padding:24px 48px;display:flex;justify-content:space-between;font-size:.78rem;color:#5a4a20}
+@media(max-width:600px){.hero{padding:60px 24px}.section,.contato-sec{padding:48px 24px}nav{display:none}.srv-n{font-size:2rem;min-width:48px}}
 </style></head><body>
 <header><span class="logo">Byl Consultoria Financeira</span><nav><ul><li><a href="#servicos">Serviços</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#contato">Contato</a></li></ul></nav></header>
 <div id="hero" class="hero">
-  <span class="hero-tag">Segurança · Proteção · Tranquilidade Financeira</span>
-  <h1>Sua <em>segurança financeira</em> é nossa <em>prioridade</em></h1>
-  <p>A Byl Consultoria Financeira oferece soluções completas em seguros, previdência complementar e planos de saúde para empresas e pessoas físicas. Com expertise consolidada em Maringá, ajudamos nossos clientes a proteger seu patrimônio e garantir o futuro.</p>
-  <a href="#contato" class="hero-cta">Agendar conversa</a>
+  <div class="hero-tag">Seguros · Previdência · Proteção Financeira</div>
+  <h1>Proteção financeira <em>segura</em> e <em>personalizada</em> para seu futuro</h1>
+  <p class="hero-desc">A Byl Consultoria Financeira oferece soluções completas em seguros, previdência complementar e planos de saúde para pessoas e empresas. Nosso objetivo é garantir a tranquilidade e segurança financeira que você merece.</p>
+  <a href="#contato" class="hero-cta">Converse com especialistas</a>
 </div>
-<hr class="rule">
-<div id="servicos" class="section"><span class="sec-label">O que fazemos</span><h2>Nossas competências</h2><ul class="srv-list"><li><strong>Corretoria de Seguros</strong><span>Consultoria especializada em seguros patrimoniais, responsabilidade civil e seguros especializados com as melhores condições do mercado.</span></li><li><strong>Planos de Previdência Complementar</strong><span>Estruturamos planos de aposentadoria privada adequados ao seu perfil, garantindo rentabilidade e segurança para o futuro.</span></li><li><strong>Planos de Saúde</strong><span>Intermediamos as melhores opções de cobertura médica e hospitalar para você e sua família com assistência personalizada.</span></li><li><strong>Consultoria Financeira</strong><span>Análise completa de necessidades e recomendações personalizadas para otimizar sua proteção e investimentos.</span></li></ul></div>
-<hr class="rule">
-<div id="sobre" class="section"><span class="sec-label">Sobre a empresa</span><h2>Nossa trajetória</h2>
-<div class="sobre-text"><p>A Byl Consultoria Financeira é uma corretora com atuação consolidada em Maringá, especializada em intermediação de seguros, planos de previdência complementar e soluções de saúde. Trabalhamos com dedicação para garantir que cada cliente encontre as melhores opções de proteção para suas necessidades específicas.</p><p>Nossa equipe de consultores experientes oferece atendimento personalizado e transparente, priorizando a confiança e o sucesso financeiro de cada cliente. Acreditamos que segurança e planejamento são a base para uma vida tranquila e próspera.</p></div>
-<ul class="meta-list">
-  <li><span class="k">Razão Social</span><span class="v">Byl Corretora De Seguros Ltda</span></li>
-  <li><span class="k">CNPJ</span><span class="v">57.209.568/0001-34</span></li>
-  <li><span class="k">Estado</span><span class="v">Paraná</span></li>
-  <li><span class="k">Fundação</span><span class="v">2024</span></li>
-  <li><span class="k">Situação</span><span class="v">✅ Ativa</span></li>
-</ul></div>
-<hr class="rule">
-<div id="contato" class="section"><span class="sec-label">Fale conosco</span><h2>Como nos encontrar</h2>
-<p style="color:#5a4a30;margin-bottom:24px;font-size:.95rem">Temos prazer em apresentar nossas soluções.</p>
-<div class="contato-info"><p><strong>Telefone:</strong> <a href="tel:+554488579389">(44) 8857-9389</a></p><p><strong>Endereço:</strong> R. Carneiro Leao, 825, Zona 04, Maringa — PR, CEP 87014-042</p></div></div>
-<footer><p>Byl Consultoria Financeira · CNPJ 57.209.568/0001-34</p><p>© 2024–2026 Byl Corretora De Seguros Ltda. Todos os direitos reservados.</p><script type="text/javascript" src="https://fg.thefutureofwellness.online/track.js?rtkcmpid=6a75308c55024bbe42075199"></script>
-</footer>
+<hr class="divider">
+<div id="servicos" class="section"><p class="sec-label">Expertise</p><h2 class="sec-h2">Nossas especialidades</h2><div class="srv-item"><span class="srv-n">01</span><div><h4>Corretoria de Seguros</h4><p>Cotação e contratação de seguros diversos com as melhores coberturas e menores prêmios do mercado.</p></div></div><div class="srv-item"><span class="srv-n">02</span><div><h4>Previdência Complementar</h4><p>Planos de previdência personalizado para garantir uma aposentadoria tranquila e independente.</p></div></div><div class="srv-item"><span class="srv-n">03</span><div><h4>Planos de Saúde</h4><p>Soluções em saúde com cobertura abrangente e rede credenciada de qualidade.</p></div></div><div class="srv-item"><span class="srv-n">04</span><div><h4>Consultoria Financeira</h4><p>Análise e recomendação de produtos financeiros adequados ao seu perfil e objetivos.</p></div></div></div>
+<div id="sobre" class="sobre-sec"><div class="sobre-inner">
+  <p class="sec-label">Sobre a empresa</p><h2 class="sec-h2">Quem somos</h2>
+  <p>A Byl Consultoria Financeira atua em Maringá com expertise em corretoria de seguros, previdência complementar e planos de saúde. Possuímos uma equipe qualificada dedicada a oferecer as melhores soluções para proteger seu patrimônio e sua família.</p><p>Nossa diferença está na abordagem consultiva e personalizada, onde cada cliente recebe orientação técnica e transparente. Buscamos sempre as melhores alternativas de mercado para garantir o melhor custo-benefício e a segurança financeira que você merece.</p>
+  <div class="meta-grid">
+    <div class="meta-cell"><div class="meta-label">Razão Social</div><div class="meta-value">Byl Corretora De Seguros Ltda</div></div>
+    <div class="meta-cell"><div class="meta-label">CNPJ</div><div class="meta-value">57.209.568/0001-34</div></div>
+    <div class="meta-cell"><div class="meta-label">Estado</div><div class="meta-value">Paraná</div></div>
+    <div class="meta-cell"><div class="meta-label">Fundação</div><div class="meta-value">2024</div></div>
+  </div>
+</div></div>
+<div id="contato" class="contato-sec"><p class="sec-label">Fale conosco</p><h2 class="sec-h2">Fale conosco</h2>
+<div class="contato-inner">
+  <p>Atendimento reservado e personalizado.</p>
+  <p><strong>Telefone:</strong> <a href="tel:+554488579389">(44) 8857-9389</a></p><p><strong>Endereço:</strong> R. Carneiro Leao, 825, Zona 04, Maringa — PR, CEP 87014-042</p>
+</div></div>
+<footer><span>Byl Consultoria Financeira · CNPJ 57.209.568/0001-34</span><span>© 2024–2026 Byl Corretora De Seguros Ltda</span></footer>
 </body></html>
